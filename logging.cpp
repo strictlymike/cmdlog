@@ -268,7 +268,8 @@ _LogFmtTimestampFilename(char *fmt, char *buf, size_t buflen)
         tm.wMinute,
         tm.wSecond,
         tm.wMilliseconds,
-        ((float)tzi.Bias)/60
+        ((float)tzi.Bias)/60,
+        GetCurrentProcessId()
     );
 }
 
